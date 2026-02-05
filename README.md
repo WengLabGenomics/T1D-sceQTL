@@ -1,1 +1,1 @@
-Single-cell eQTL mapping reveals immune cell type-specific genetic modulation in children and adolescents with type 1 diabetes
+This repository contains the R and Python code that was used to analyze the manuscript "Single-cell eQTL mapping reveals immune cell type-specific genetic modulation in children and adolescents with type 1 diabetes"
