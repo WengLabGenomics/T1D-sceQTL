@@ -16,7 +16,7 @@ n   <- as.numeric(arg[3])
 # -----------------------------
 # Paths
 # -----------------------------
-base.dir <- './input/sc-scale/02QC_log/'
+base.dir <- './demo/'
 save.dir <- './res/'
 
 # Covariates to include (clinical)
