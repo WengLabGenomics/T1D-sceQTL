@@ -1,0 +1,28 @@
+name: t1d-single-cell-eqtl
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.9
+  - r-base=4.1.2
+  - scanpy=1.9.3
+  - statsmodels=0.13.5
+  - python-igraph
+  - leidenalg
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - r-ggplot2==3.4.2
+  - r-dplyr==1.1.2
+  - r-matrixeqtl==2.3
+  - r-data.table==1.14.8
+  - r-patchwork==1.1.2
+  - r-ggpubr==0.6.0
+  - r-coloc==5.2.2
+  - r-lme4=1.1-30
+  - pip
+  - pip:
+      - harmonypy==0.0.6
+      - doubletdetection==4.2
