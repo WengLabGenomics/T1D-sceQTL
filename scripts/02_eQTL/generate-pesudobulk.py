@@ -35,4 +35,4 @@ for ct in raw.obs['Celltype1'].unique():
     res = pd.DataFrame(columns=temp.var_names, index=temp.obs['sample'].cat.categories)
     for clust in temp.obs['sample'].cat.categories:
         res.loc[clust] = temp[temp.obs['sample'].isin([clust]), :].X.mean(0)
-    res.to_csv('./input/sc-scale/01raw/{}.csv'.format(ct))
+    res.to_csv('./input/01raw/{}.csv'.format(ct))
