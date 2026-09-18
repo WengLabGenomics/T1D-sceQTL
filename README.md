@@ -19,7 +19,6 @@ The study includes:
 - Integration of T1D GWAS variants with cell type-specific eQTLs
 - GWAS–eQTL colocalization analysis
 - Classical HLA association and HLA allele-based eQTL analysis
-- Conditional analysis of HLA risk signals
 - Clinical phenotype analyses
 - Development and validation of a genetic risk score (GRS)
 
