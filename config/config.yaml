@@ -1,0 +1,57 @@
+project:
+  genome_build: "hg38"
+
+paths:
+  data: "data"
+  results: "results"
+  figures: "figures"
+
+celltypes:
+  - CD14Mono
+  - CD16Mono
+  - cDC
+  - pDC
+  - CD4T
+  - CD8T
+  - T_Prolif
+  - NK
+  - B
+  - Plasma
+
+genotype_qc:
+  imputation_r2_min: 0.8
+  maf_min: 0.05
+  hwe_p_min: 1.0e-6
+
+eqtl:
+  cis_window_bp: 1000000
+  min_donor_fraction: 0.10
+  fdr_threshold: 0.05
+  genotype_pcs: 3
+  covariates:
+    - age
+    - sex
+    - disease
+    - batch
+
+interaction_eqtl:
+  fdr_threshold: 0.05
+  covariates:
+    - age
+    - sex
+    - batch
+  include_genotype_pcs: true
+
+gwas:
+  significance_threshold: 5.0e-8
+
+coloc:
+  cis_window_bp: 1000000
+  pp_h4_threshold: 0.8
+
+hla:
+  maf_min: 0.01
+  association_p_threshold: 5.0e-8
+  covariates:
+    - sex
+    - geographic_region
