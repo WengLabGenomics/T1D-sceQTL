@@ -1,0 +1,11 @@
+code	display_name
+CD14Mono	CD14+ monocytes
+CD16Mono	CD16+ monocytes
+cDC	conventional dendritic cells
+pDC	plasmacytoid dendritic cells
+CD4T	CD4+ T cells
+CD8T	CD8+ T cells
+T_Prolif	proliferating T cells
+NK	NK cells
+B	B cells
+Plasma	plasma cells
