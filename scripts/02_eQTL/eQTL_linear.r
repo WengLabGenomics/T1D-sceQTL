@@ -4,7 +4,7 @@ ct = arg[1]
 
 base.dir = './input/disease_all_geno'
 #base.dir = '../demo'
-save.dir = './res/All/'
+save.dir = './res/combine-All/'
 useModel = modelLINEAR
 
 
