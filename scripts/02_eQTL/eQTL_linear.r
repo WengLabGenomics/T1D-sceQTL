@@ -78,15 +78,12 @@ genepos = read.table(gene_location_file_name,
 genepos$geneid = rownames(genepos)
 genepos = genepos[c('geneid','chr','left','right')]
 
-# 提取样本名（列名）
 snp_samples <- snps$columnNames
 gene_samples <- gene$columnNames
 common_samples <- intersect(snp_samples, gene_samples)
 
-# 筛选 snps 样本
 snps$ColumnSubsample(match(common_samples,snps$columnNames))
 
-# 筛选 gene 样本
 gene$ColumnSubsample(match(common_samples,gene$columnNames))
 
 cvrt$ColumnSubsample(match(common_samples,cvrt$columnNames))
