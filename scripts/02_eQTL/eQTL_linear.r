@@ -24,8 +24,7 @@ covariates_file_name = paste0(base.dir,"/Covariates.txt");
 output_file_name_cis = tempfile();
 output_file_name_tra = tempfile();
 
-# Only associations significant at this level will be saved
-pvOutputThreshold_cis = 2e-2;
+pvOutputThreshold_cis = 1;
 pvOutputThreshold_tra = 1e-2;
 
 # Error covariance matrix
