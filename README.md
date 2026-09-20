@@ -1,4 +1,4 @@
-# T1D single-cell eQTL analysis
+# T1D-sceQTL
 
 Code repository for the study:
 
@@ -45,12 +45,10 @@ T1D-single-cell-eQTL/
     ├── SNP.txt
     ├── geneloc.txt
     └── snpsloc.txt
-text```
+```
 
 ## Demo
 
-The demo/ directory contains example input files for running:
+The `demo/` directory provides a small example dataset for demonstrating the use of `scripts/02_eQTL/eQTL_linear.r`.
 
-scripts/02_eQTL/eQTL_linear.r
-
-The demo is provided to illustrate the required input format and basic workflow for the cis-eQTL analysis.
+The example files include gene expression, genotype, covariate, gene-location, and SNP-location data.
