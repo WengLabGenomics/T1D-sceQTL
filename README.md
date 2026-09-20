@@ -32,10 +32,24 @@ T1D-single-cell-eQTL/
 ├── config/
 │   ├── config.yaml
 │   └── celltype_names.tsv
-└── scripts/
-    ├── 01_scRNA/
-    ├── 02_eQTL/
-    ├── 03_GWAS_coloc/
-    ├── 04_HLA/
-    ├── 05_clinical/
-    └── 06_GRS/
+├── scripts/
+│   ├── 01_scRNA/        # scRNA-seq preprocessing and cell proportion analysis
+│   ├── 02_eQTL/         # cis-eQTL and genotype-by-disease interaction eQTL analysis
+│   ├── 03_GWAS_coloc/   # GWAS integration and colocalization analysis
+│   ├── 04_HLA/          # HLA association, HLA-eQTL and conditional analyses
+│   ├── 05_clinical/     # clinical phenotype association analyses
+│   └── 06_GRS/          # genetic risk score development and validation
+└── demo/
+    ├── B_GE.txt
+    ├── Covariates.txt
+    ├── SNP.txt
+    ├── geneloc.txt
+    └── snpsloc.txt
+
+## Demo
+
+The demo/ directory contains example input files for running:
+
+scripts/02_eQTL/eQTL_linear.r
+
+The demo is provided to illustrate the required input format and basic workflow for the cis-eQTL analysis.
